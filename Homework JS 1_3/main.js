@@ -1,4 +1,3 @@
 let name = 'Anna';
 
-let massage = 'Привет, мир! Меня зовут ' +  name;
-console.log(massage);
+console.log(`Привет, мир! Меня зовут ${name}.`);
