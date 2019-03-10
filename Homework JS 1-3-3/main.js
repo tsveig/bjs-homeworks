@@ -28,45 +28,9 @@ let sum = 0;
 let num = 0;
 for (key in data){
   avarage = Number(getAverageMark(data[key]));
+
+  avarageObject[key] = avarage;
   
-  switch (key){
-    case `algebra`: {
-      avarageObject.algebra = avarage;
-      break;
-    }
-    case `geometry`: {
-      avarageObject.geometry = avarage;
-      break;
-    }
-    case `russian`: {
-      avarageObject.russian = avarage;
-      break;
-    }
-    case `physics`: {
-      avarageObject.physics = avarage;
-      break;
-    }
-    case `music`: {
-      avarageObject.music = avarage;
-      break;
-    }
-    case `english`: {
-      avarageObject.english = avarage;
-      break;
-    }
-    case `poetry`: {
-      avarageObject.poetry = avarage;
-      break;
-    }
-    case `chemistry`: {
-      avarageObject.chemistry = avarage;
-      break;
-    }
-    case `french`: {
-      avarageObject.french = avarage;
-      break;
-    }
-  }
   sum += avarage;
   num ++;
 }
